@@ -44,8 +44,9 @@ void main()
 }
 int Menu()
 {   int choice;
-    printf("\n\n\nWelcome to Parking Management System\n");
-    printf("\n1.Two wheeler entry\n");
+    printf("\n\nWelcome to Parking Management System\n");
+    printf("\n\n\nCharges for two wheeler Rs.40, three wheeler Rs. 70 and four wheeler Rs. 100\n");
+    printf("\n\n1.Two wheeler entry\n");
     printf("\n2.Three wheeler entry\n");
     printf("\n3.Four wheeler entry\n");
     printf("\n4.Status check\n");
