@@ -10,6 +10,8 @@ int notw=0;//no. of two wheeler vehicle, global variable
 int nothw=0;//no. of three wheeler vehicle, global variable
 int nofw=0;//no. of four wheeler vehicle, global variable
 int amount=0, count=0; //amount corresponds to each vehicle and total no. of vehicle, global variables
+
+//The code starts here.
 void main()
 {
     while(1) 
@@ -42,6 +44,8 @@ void main()
         }
     }
 }
+
+//Menu to be displayed to the user to choose the options necessary for fare calculation
 int Menu()
 {   int choice;
     printf("\n\nWelcome to Parking Management System\n");
@@ -57,6 +61,7 @@ int Menu()
     return(choice);
 }
 
+//Method for calcuating the fare of the Two wheeler vehicles
 void Twowheeler()
 {
     printf("Entry successful\n");
@@ -65,14 +70,16 @@ void Twowheeler()
     count++;
 }
 
+//Method for calculating the fare for Three Wheeler vehicles
 void Threewheeler()
 {
     printf("Entry successful\n");
     nothw++;
-    amount=amount+70;// Rs.70 to be charged for three wheeler
+    amount=amount+70;// Rs.70 to be charged for three wheeler vehicles
     count++;
 }
 
+//Method for calculating the fare for Four wheeler vehicles 
 void Fourwheeler()
 {
     printf("Entry successful\n");
@@ -81,6 +88,7 @@ void Fourwheeler()
     count++;
 }
 
+//Method for displaying the status of the parking
 void Status()
 {
     printf("Number of two wheeler vehicle: %d\n",notw);
@@ -90,6 +98,7 @@ void Status()
     printf("Total amount gained: %d\n",amount);
 }
 
+//Method for resetting the data of the parking
 void Delete()
 {
     notw=0;
